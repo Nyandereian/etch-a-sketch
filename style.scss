@@ -1,0 +1,65 @@
+$dark: #333333;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $dark;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  background-color: $dark;
+  padding: 50px;
+  position: relative;
+  width: 25%;
+
+  h1 {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 72px;
+  }
+
+  .settings {
+    width: 100%;
+
+    #reset {
+      background-color: $dark;
+      border: 1px solid $dark;
+      bottom: 0px;
+      color: white;
+      font-size: 20px;
+      padding-bottom: 50px;
+      position: absolute;
+
+      &:hover {
+        cursor: pointer;
+        &:after {
+          content: ' <<<';
+        }
+      }
+    }
+  }
+
+}
+
+.wrapper {
+  width: 75%;
+  .container {
+    background-color: white;
+    display: grid;
+    height: 100vh;
+    width: 100vh;
+
+    .note {
+      border: none;
+      opacity: 0.0;
+
+    }
+  }
+}
